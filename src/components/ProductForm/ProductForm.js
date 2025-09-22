@@ -3,13 +3,13 @@ import Button from '../Button/Button';
 import OptionSize from './OptionSize/OptionSize';
 import OptionColor from './OptionColor/OptionColor';
 
-const ProductForm = ({ setCurrentColor, setCurrentSize, colors, sizes, title, getPrice, currentColor, currentSize }) => {
+const ProductForm = ({ setCurrentColor, setCurrentSize, colors, sizes, title, price, currentColor, currentSize }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Podsumowanie produktu:');
     console.log('Nazwa:', title);
-    console.log('Cena końcowa:', getPrice());
+    console.log('Cena końcowa:', price);
     console.log('Wybrany kolor:', currentColor);
     console.log('Wybrany rozmiar:', currentSize);
   };
